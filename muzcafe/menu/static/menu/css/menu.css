@@ -1,0 +1,119 @@
+.main {
+    margin-top:60px;
+}
+
+.menu_card {
+    max-height: 40vh;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 768px){
+    .menu_card {
+    max-height: 70vh;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+}
+
+.menu_card:hover {
+    border-color: #fe6700;
+}
+
+.photo_div {
+    width: 200px;            /* Жесткая ширина фото */
+    height: 200px;           /* Жесткая высота фото */
+    flex-shrink: 0;          /* Запрещаем сжимать этот блок */
+    overflow: hidden;
+}
+
+@media (min-width: 768px){
+    .photo_div {
+        width: 250px;            /* Жесткая ширина фото */
+        height: 250px;           /* Жесткая высота фото */
+        flex-shrink: 0;          /* Запрещаем сжимать этот блок */
+        overflow: hidden;
+}
+}
+
+.photo-wrapper {
+
+    display: flex;
+    justify-content: center; /* Центр по горизонтали */
+    align-items: center;     /* Центр по вертикали */
+    width: 100%;
+    height: 200px;           /* Высота зоны для фото (подстройте под себя) */
+    /*background-color: #f8f9fa; /* Легкий фон, если карточка станет шире фото */
+    overflow: hidden;
+}
+
+@media (min-width: 768px){
+.photo-wrapper {
+
+    display: flex;
+    justify-content: center; /* Центр по горизонтали */
+    align-items: center;     /* Центр по вертикали */
+    width: 100%;
+    height: 250px;           /* Высота зоны для фото (подстройте под себя) */
+    /*background-color: #f8f9fa; /* Легкий фон, если карточка станет шире фото */
+    overflow: hidden;
+
+}
+}
+
+.photo_div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* 5. Картинка идеально заполняет блок без искажения пропорций */
+    transition: transform 0.4s ease; /* Плавность анимации (0.4 секунды) */
+}
+
+/* Эффект при наведении мыши */
+.photo_div:hover img {
+  transform: scale(1.1); /* Слегка приближает (на 10%). Для большего эффекта поставьте 1.15 или 1.2 */
+}
+
+.sidebar_menu {
+    height: 6vh; /* По умолчанию на смартфонах */
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    background-color: rgba(31, 31, 31, 1);
+    /*background-color: #1f1f1f;*/
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar--hidden {
+        transform: translateY(-7vh);
+    }
+
+h5{
+    font-family: 'Bebas Neue', sans-serif !important;
+}
+.sidebar_text:hover {
+    color: #fe6700;
+}
+
+
+
+@media (min-width: 768px) {
+    .sidebar_menu {
+        height: 100vh; /* На планшетах и компьютерах */
+
+    }
+
+}
+
+.menu_descript_text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:5; /* Укажите нужное количество строк (например, 3) */
+    overflow: hidden;       /* Скрывает остальной текст */
+}
+
+.overflow-auto {
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.overflow-auto::-webkit-scrollbar {
+  display: none; /* Chrome, Safari и Opera */
+}
+
+
+

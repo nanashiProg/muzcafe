@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Главная{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'main/css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+    <img class="main_photo" src="{% static 'img/nightclub.jpeg' %}">
+
+
+
+    <div class="center_photo">
+        <img class="center-logo" src="{% static 'img/logo.png' %}">
+    </div>
+{% endblock %}

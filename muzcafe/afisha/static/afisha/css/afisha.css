@@ -1,0 +1,44 @@
+h1 {
+    color: blue; /* Цвет станет синим */
+}
+
+p {
+    color:red;
+}
+
+.poster {
+    color: white;
+    margin-left:5%;
+    margin-right:5%;
+}
+media (max-width: 768px){
+    #afisha{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Ровно две равные колонки */
+    }
+}
+@media (min-width: 768px){
+  #afisha{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ровно две равные колонки */
+  }
+}
+
+.afisha_photo {
+  width: 100%; /* Задает ширину */
+  border-radius: 10px; /* Скругление углов */
+  height: 400px; /* Сохраняет пропорции */
+  object-fit: cover;   /* Обрезает, не растягивая */
+  object-position: center; /* Центрирует зону обрезки */
+}
+
+.description {
+    font-weight: 300;
+}
+
+.afisha_date_text {
+    color: #fe6700;
+}
+
+
+
