@@ -21,11 +21,6 @@ body {
     margin-left: 0px;
 }
 
-@media (min-width: 768px){
-
-}
-
-
  label {
     position: relative;
     display: block;
@@ -43,12 +38,12 @@ body {
 
   label::before {
     content: "";
-    top: 0;
+    top: 1px;
   }
 
   label::after {
     content: "";
-    bottom: 0;
+    bottom: 1px;
   }
 
   label span {
@@ -94,8 +89,7 @@ body {
 }
 
 label[for="burger-toggle"] {
-  margin-left: auto; /* Автоматически оттолкнет бургер к правому краю флекс-контейнера*/
-  cursor: pointer;
+   cursor: pointer;
   margin-right: 20px;
 
 }
@@ -111,6 +105,18 @@ label[for="burger-toggle"] {
     font-family: system-ui;
     font-weight: 525;
     font-size: 30px;
+    }
+
+    .basket_top svg path {
+        stroke: white;        /* Цвет линии (обязательно должен быть задан) */
+        stroke-width: 0.7px;    /* Толщина линии (можно в px, em или просто числах) */
+        color: white;
+
+    }
+
+    .basket_top{
+        margin-left:auto;
+        margin-right: 20px;
     }
 
     .header_nav {

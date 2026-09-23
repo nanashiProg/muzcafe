@@ -5,6 +5,7 @@
 .menu_card {
     max-height: 40vh;
     border: 1px solid rgba(255, 255, 255, 0.2);
+
 }
 
 @media (min-width: 768px){
@@ -43,6 +44,15 @@
     height: 200px;           /* Высота зоны для фото (подстройте под себя) */
     /*background-color: #f8f9fa; /* Легкий фон, если карточка станет шире фото */
     overflow: hidden;
+}
+
+@media (max-width: 768px){
+    .menu_descript_text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3; /* Укажите нужное количество строк (например, 3) */
+    overflow: hidden;       /* Скрывает остальной текст */
+}
 }
 
 @media (min-width: 768px){
@@ -98,14 +108,16 @@ h5{
 
     }
 
-}
-
-.menu_descript_text {
+    .menu_descript_text {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp:5; /* Укажите нужное количество строк (например, 3) */
     overflow: hidden;       /* Скрывает остальной текст */
 }
+
+}
+
+
 
 .overflow-auto {
   -ms-overflow-style: none;  /* IE и Edge */
@@ -115,5 +127,29 @@ h5{
   display: none; /* Chrome, Safari и Opera */
 }
 
+.menu_btn {
+  background-color: rgba(254, 103, 0, 1);
+    border-radius: 10px;
+      border: none;         /* Убирает рамку */
+      height: 48px;
+}
+
+.menu_btn:hover{
+    background-color: rgba(254, 103, 0, 0.9);
+}
+
+.price_text{
+    font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
+    color: white;
+}
+
+/* Делаем линии иконки толще */
+svg path {
+  stroke: white;        /* Цвет линии (обязательно должен быть задан) */
+  stroke-width: 0.7px;    /* Толщина линии (можно в px, em или просто числах) */
+  color: white;
+}
 
 
